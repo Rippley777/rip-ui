@@ -71,6 +71,96 @@ button:focus-visible {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+[data-state="open"].animate-fadeIn {
+  animation: fadeIn 0.15s ease;
+}
+[data-state="closed"].animate-fadeOut {
+  animation: fadeOut 0.15s ease;
+}
+[data-state="open"].animate-scaleIn {
+  animation: scaleIn 0.15s ease;
+}
+[data-state="closed"].animate-scaleOut {
+  animation: scaleOut 0.15s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+[data-state="open"].animate-slideIn {
+  animation: slideIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-state="closed"].animate-hide {
+  animation: hide 0.2s ease-in;
+}
+
+@keyframes fadeInTooltip {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+[data-state="delayed-open"].animate-fadeIn {
+  animation: fadeInTooltip 0.15s ease-out;
+}
+
 /* BELOW STOLEN FROM https://piccalil.li/blog/a-more-modern-css-reset/*/
 
 /* Box sizing rules */

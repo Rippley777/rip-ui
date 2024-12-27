@@ -1,0 +1,34 @@
+import React, { useState } from "react";
+import { Meta, StoryFn } from "@storybook/react";
+import Slider, { SliderProps } from "./Slider";
+
+export default {
+  title: "Components/Slider",
+  component: Slider,
+} as Meta;
+
+const Template: StoryFn<SliderProps> = (args) => {
+  const [range, setRange] = useState(args.value);
+  return (
+    <div className="space-y-2">
+      <Slider {...args} value={range} onValueChange={setRange} />
+      <p className="text-gray-700">Current value: {range.join(", ")}</p>
+    </div>
+  );
+};
+
+export const SingleThumb = Template.bind({});
+SingleThumb.args = {
+  value: [50],
+  min: 0,
+  max: 100,
+  step: 1,
+};
+
+export const RangeSlider = Template.bind({});
+RangeSlider.args = {
+  value: [25, 75],
+  min: 0,
+  max: 100,
+  step: 5,
+};
