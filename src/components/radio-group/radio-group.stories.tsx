@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import RadioGroup, { RadioGroupProps } from "./";
+import RadioGroup, { RadioGroupProps } from ".";
 
 export default {
   title: "Components/RadioGroup",

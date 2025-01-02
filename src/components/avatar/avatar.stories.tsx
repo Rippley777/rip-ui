@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import Avatar, { AvatarProps } from "./";
+import Avatar, { AvatarProps } from ".";
 
 const meta: Meta<AvatarProps> = {
   title: "Components/Avatar",

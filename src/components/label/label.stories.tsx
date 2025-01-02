@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import Label, { LabelProps } from "./";
+import Label, { LabelProps } from ".";
 
 const meta: Meta<LabelProps> = {
   title: "Components/Label",

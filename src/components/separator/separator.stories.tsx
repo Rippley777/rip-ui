@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import Separator, { SeparatorProps } from "./";
+import Separator, { SeparatorProps } from ".";
 
 // const code = `
 // import React from "react";

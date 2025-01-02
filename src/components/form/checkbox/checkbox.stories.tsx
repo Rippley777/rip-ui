@@ -1,7 +1,7 @@
 // MyCheckbox.stories.jsx
 import React from "react";
 import { StoryFn } from "@storybook/react";
-import Checkbox, { CheckboxProps } from "./";
+import Checkbox, { CheckboxProps } from ".";
 
 export default {
   title: "Components/Form/Checkbox",

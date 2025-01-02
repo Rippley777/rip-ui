@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import HoverCard, { HoverCardProps } from "./";
+import HoverCard, { HoverCardProps } from ".";
 
 const meta: Meta<HoverCardProps> = {
   title: "Components/HoverCard",

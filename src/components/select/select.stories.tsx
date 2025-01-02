@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import Select, { SelectProps } from "./";
+import Select, { SelectProps } from ".";
 
 export default {
   title: "Components/Select",

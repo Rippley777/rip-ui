@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import Toast, { ToastProps } from "./";
+import Toast, { ToastProps } from ".";
 
 // const code = `
 // import React, { useState } from "react";

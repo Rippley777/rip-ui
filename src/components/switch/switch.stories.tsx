@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import Switch, { SwitchProps } from "./";
+import Switch, { SwitchProps } from ".";
 
 export default {
   title: "Components/Switch",

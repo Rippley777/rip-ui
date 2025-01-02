@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta } from "@storybook/react";
-import Progress, { ProgressProps } from "./";
+import Progress, { ProgressProps } from ".";
 
 export default {
   title: "Components/Progress",

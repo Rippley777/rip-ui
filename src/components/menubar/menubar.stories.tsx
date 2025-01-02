@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Menubar, { MenubarProps } from "./";
+import Menubar, { MenubarProps } from ".";
 
 const meta: Meta<MenubarProps> = {
   title: "Components/Menubar",

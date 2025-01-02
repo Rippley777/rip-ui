@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import Dialog, { DialogProps } from "./";
+import Dialog, { DialogProps } from ".";
 
 const meta: Meta<DialogProps> = {
   title: "Components/Dialog",

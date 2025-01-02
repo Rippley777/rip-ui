@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import AspectRatio, { AspectRatioProps } from "./";
+import AspectRatio, { AspectRatioProps } from ".";
 
 const meta: Meta<AspectRatioProps> = {
   title: "Components/AspectRatio",

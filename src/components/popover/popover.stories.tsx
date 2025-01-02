@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import Popover, { PopoverProps } from "./";
+import Popover, { PopoverProps } from ".";
 
 const code = `import React from "react";
 import Popover from "./Popover";

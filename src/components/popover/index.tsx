@@ -9,12 +9,12 @@ export interface PopoverProps {
   className?: string;
 }
 
-const overlayClasses = `
-  fixed inset-0
-  bg-black/30
-  data-[state=open]:animate-fadeIn
-  data-[state=closed]:animate-fadeOut
-`;
+// const overlayClasses = `
+//   fixed inset-0
+//   bg-black/30
+//   data-[state=open]:animate-fadeIn
+//   data-[state=closed]:animate-fadeOut
+// `;
 
 const contentClasses = `
   rounded-md
@@ -59,3 +59,54 @@ const Popover: React.FC<PopoverProps> = ({
 };
 
 export default Popover;
+
+export const PopoverIcon: React.FC<PopoverProps> = ({
+  triggerLabel,
+  children,
+}) => (
+  <PopoverPrimitive.Root>
+    <PopoverPrimitive.Trigger asChild>
+      <button className="IconButton" aria-label="Update dimensions">
+        {/* <MixerHorizontalIcon /> */} - {triggerLabel ?? "notrig"} -{" "}
+        {children ?? "nochild"}
+      </button>
+    </PopoverPrimitive.Trigger>
+    <PopoverPrimitive.Portal>
+      <PopoverPrimitive.Content className="PopoverContent" sideOffset={5}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <p className="Text" style={{ marginBottom: 10 }}>
+            Dimensions
+          </p>
+          <fieldset className="Fieldset">
+            <label className="Label" htmlFor="width">
+              Width
+            </label>
+            <input className="Input" id="width" defaultValue="100%" />
+          </fieldset>
+          <fieldset className="Fieldset">
+            <label className="Label" htmlFor="maxWidth">
+              Max. width
+            </label>
+            <input className="Input" id="maxWidth" defaultValue="300px" />
+          </fieldset>
+          <fieldset className="Fieldset">
+            <label className="Label" htmlFor="height">
+              Height
+            </label>
+            <input className="Input" id="height" defaultValue="25px" />
+          </fieldset>
+          <fieldset className="Fieldset">
+            <label className="Label" htmlFor="maxHeight">
+              Max. height
+            </label>
+            <input className="Input" id="maxHeight" defaultValue="none" />
+          </fieldset>
+        </div>
+        <PopoverPrimitive.Close className="PopoverClose" aria-label="Close">
+          {/* <Cross2Icon /> */}X
+        </PopoverPrimitive.Close>
+        <PopoverPrimitive.Arrow className="PopoverArrow" />
+      </PopoverPrimitive.Content>
+    </PopoverPrimitive.Portal>
+  </PopoverPrimitive.Root>
+);
