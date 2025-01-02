@@ -26,7 +26,7 @@ const contentClasses = `
   data-[state=closed]:animate-scaleOut
 `;
 
-const Popover: React.FC<PopoverProps> = ({
+export const Popover: React.FC<PopoverProps> = ({
   triggerLabel,
   children,
   sideOffset = 5,

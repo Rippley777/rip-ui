@@ -11,7 +11,7 @@ export interface CheckboxProps {
   defaultChecked?: boolean;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({
+export const Checkbox: React.FC<CheckboxProps> = ({
   label,
   checkboxClassName,
   indicatorClassName,

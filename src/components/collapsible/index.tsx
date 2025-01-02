@@ -41,7 +41,7 @@ const chevronBaseClasses = `
   [data-state=open]:rotate-180
 `;
 
-const Collapsible: React.FC<CollapsibleProps> = ({
+export const Collapsible: React.FC<CollapsibleProps> = ({
   label,
   children,
   defaultOpen = false,

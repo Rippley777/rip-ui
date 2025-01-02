@@ -10,7 +10,11 @@ export interface LabelProps {
 
 const baseClasses = "block text-sm font-medium text-gray-700 mb-1";
 
-const Label: React.FC<LabelProps> = ({ htmlFor, children, className }) => {
+export const Label: React.FC<LabelProps> = ({
+  htmlFor,
+  children,
+  className,
+}) => {
   return (
     <LabelPrimitive.Root
       htmlFor={htmlFor}

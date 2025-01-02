@@ -64,7 +64,7 @@ const linkClasses = `
   focus:outline-none focus:bg-gray-100
 `;
 
-const NavigationMenu: React.FC<NavigationMenuProps> = ({
+export const NavigationMenu: React.FC<NavigationMenuProps> = ({
   navItems,
   className,
 }) => {

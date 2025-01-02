@@ -50,7 +50,7 @@ const closeBtnClasses = `
   focus:outline-none
 `;
 
-const Toast: React.FC<ToastProps> = ({
+export const Toast: React.FC<ToastProps> = ({
   open,
   onOpenChange,
   title,

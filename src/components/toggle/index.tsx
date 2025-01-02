@@ -23,7 +23,7 @@ const baseClasses = `
   disabled:cursor-not-allowed
 `;
 
-const Toggle: React.FC<ToggleProps> = ({
+export const Toggle: React.FC<ToggleProps> = ({
   pressed,
   onPressedChange,
   disabled = false,

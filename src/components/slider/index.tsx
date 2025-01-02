@@ -19,7 +19,7 @@ const thumbClasses = `
   rounded-full shadow focus:outline-none focus:ring-2 focus:ring-blue-400
 `;
 
-const Slider: React.FC<SliderProps> = ({
+export const Slider: React.FC<SliderProps> = ({
   value,
   onValueChange,
   min = 0,

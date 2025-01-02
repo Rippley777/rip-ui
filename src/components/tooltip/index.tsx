@@ -15,7 +15,7 @@ const contentClasses = `
   data-[state=delayed-open]:animate-fadeIn
 `;
 
-const Tooltip: React.FC<TooltipProps> = ({
+export const Tooltip: React.FC<TooltipProps> = ({
   text,
   children,
   className,

@@ -61,7 +61,7 @@ export interface AlertDialogProps {
   onConfirm?: () => void;
 }
 
-const AlertDialog: React.FC<AlertDialogProps> = ({
+export const AlertDialog: React.FC<AlertDialogProps> = ({
   triggerLabel,
   title,
   description,

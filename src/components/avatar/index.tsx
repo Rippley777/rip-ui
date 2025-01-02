@@ -25,7 +25,7 @@ const sizeClassesMap: Record<NonNullable<AvatarProps["size"]>, string> = {
   lg: "w-16 h-16 text-xl",
 };
 
-const Avatar: React.FC<AvatarProps> = ({
+export const Avatar: React.FC<AvatarProps> = ({
   src,
   alt = "",
   fallback = "?",

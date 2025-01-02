@@ -51,7 +51,7 @@ export interface AccordionProps {
   collapsible?: boolean;
 }
 
-const Accordion: React.FC<AccordionProps> = ({
+export const Accordion: React.FC<AccordionProps> = ({
   accordions,
   type = "single",
   collapsible = false,

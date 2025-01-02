@@ -61,7 +61,7 @@ const itemDisabledClasses = `
   focus:bg-transparent
 `;
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({
+export const DropdownMenu: React.FC<DropdownMenuProps> = ({
   triggerLabel,
   items,
   className,

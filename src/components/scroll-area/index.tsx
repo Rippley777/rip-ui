@@ -13,7 +13,10 @@ const scrollbarClasses =
   "flex select-none touch-none p-0.5 bg-gray-200 transition-colors";
 const thumbClasses = "flex-1 bg-gray-400 rounded-full";
 
-const ScrollArea: React.FC<ScrollAreaProps> = ({ children, className }) => {
+export const ScrollArea: React.FC<ScrollAreaProps> = ({
+  children,
+  className,
+}) => {
   return (
     <ScrollAreaPrimitive.Root className={twMerge(rootClasses, className)}>
       <ScrollAreaPrimitive.Viewport className={viewportClasses}>

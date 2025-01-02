@@ -52,7 +52,7 @@ const itemClasses = `
 const labelClasses = "px-3 py-1 text-xs text-gray-500";
 const separatorClasses = "my-1 h-px bg-gray-200";
 
-const Select: React.FC<SelectProps> = ({
+export const Select: React.FC<SelectProps> = ({
   items,
   value,
   onValueChange,

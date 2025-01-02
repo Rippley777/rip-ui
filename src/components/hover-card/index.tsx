@@ -9,7 +9,7 @@ export interface HoverCardProps {
   sideOffset?: number;
   defaultOpen?: boolean;
 }
-const HoverCard: React.FC<HoverCardProps> = ({
+export const HoverCard: React.FC<HoverCardProps> = ({
   trigger,
   content,
   className,

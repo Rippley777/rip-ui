@@ -28,7 +28,7 @@ const thumbClasses = `
   data-[state=checked]:translate-x-6
 `;
 
-const Switch: React.FC<SwitchProps> = ({
+export const Switch: React.FC<SwitchProps> = ({
   checked,
   onCheckedChange,
   disabled = false,

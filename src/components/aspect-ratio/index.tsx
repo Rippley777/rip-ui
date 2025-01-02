@@ -17,7 +17,7 @@ export interface AspectRatioProps {
   className?: string;
 }
 
-const AspectRatio: React.FC<AspectRatioProps> = ({
+export const AspectRatio: React.FC<AspectRatioProps> = ({
   ratio,
   children,
   className,

@@ -5,7 +5,7 @@ export interface MessageProps {
   type: "success" | "info" | "error";
 }
 
-const Message: React.FC<MessageProps> = ({ message, type }) => {
+export const Message: React.FC<MessageProps> = ({ message, type }) => {
   let typeClass = "";
   switch (type) {
     case "success":

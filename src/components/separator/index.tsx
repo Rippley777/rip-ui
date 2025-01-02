@@ -7,7 +7,7 @@ export interface SeparatorProps {
   className?: string;
 }
 
-const Separator: React.FC<SeparatorProps> = ({
+export const Separator: React.FC<SeparatorProps> = ({
   orientation = "horizontal",
   className,
 }) => {

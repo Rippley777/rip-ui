@@ -29,7 +29,11 @@ const contentClasses = `
   p-4
 `;
 
-const Tabs: React.FC<TabsProps> = ({ items, defaultValue, className }) => {
+export const Tabs: React.FC<TabsProps> = ({
+  items,
+  defaultValue,
+  className,
+}) => {
   return (
     <TabsPrimitive.Root
       defaultValue={defaultValue || items[0]?.value}

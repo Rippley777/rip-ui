@@ -23,7 +23,7 @@ const radioClasses = `
 `;
 const indicatorClasses = "block w-full h-full bg-blue-500 rounded-full";
 
-const RadioGroup: React.FC<RadioGroupProps> = ({
+export const RadioGroup: React.FC<RadioGroupProps> = ({
   options,
   value,
   onChange,

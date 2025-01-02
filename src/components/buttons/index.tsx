@@ -4,7 +4,7 @@ interface CompProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-const Button = ({
+export const Button = ({
   children,
   className = "py-2 px-4 m-5",
   ...props

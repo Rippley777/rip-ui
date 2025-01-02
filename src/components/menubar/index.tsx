@@ -23,7 +23,7 @@ const itemClasses = `
   hover:bg-gray-100 focus:bg-gray-100 outline-none
 `;
 
-const Menubar: React.FC<MenubarProps> = ({ menus, className }) => {
+export const Menubar: React.FC<MenubarProps> = ({ menus, className }) => {
   return (
     <MenubarPrimitive.Root className={twMerge(rootClasses, className)}>
       {menus.map((menu) => (

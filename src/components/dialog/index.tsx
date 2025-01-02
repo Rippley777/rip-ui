@@ -42,7 +42,7 @@ const closeButtonClasses = `
   focus:outline-none focus:ring-2 focus:ring-blue-400
 `;
 
-const Dialog: React.FC<DialogProps> = ({
+export const Dialog: React.FC<DialogProps> = ({
   triggerLabel,
   title,
   children,

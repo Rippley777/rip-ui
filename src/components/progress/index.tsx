@@ -11,7 +11,7 @@ export interface ProgressProps {
 const baseClasses = "relative h-4 w-full bg-gray-200 rounded overflow-hidden";
 const indicatorClasses = "h-full bg-blue-600 transition-all";
 
-const Progress: React.FC<ProgressProps> = ({
+export const Progress: React.FC<ProgressProps> = ({
   value,
   indeterminate,
   className,
