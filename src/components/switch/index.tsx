@@ -9,39 +9,41 @@ export interface SwitchProps {
   className?: string;
 }
 
-const rootClasses = `
-  relative inline-flex items-center
-  w-12 h-6
-  rounded-full
-  bg-gray-300
-  data-[state=checked]:bg-blue-600
-  transition-colors
-  cursor-pointer
-  disabled:cursor-not-allowed
-`;
-const thumbClasses = `
-  block w-5 h-5
-  bg-white rounded-full
-  shadow
-  transition-transform
-  translate-x-0
-  data-[state=checked]:translate-x-6
-`;
+// const rootClasses = `
+//   relative inline-flex items-center
+//   w-12 h-6
+//   rounded-full
+//   bg-gray-300
+//   data-[state=checked]:bg-blue-600
+//   transition-colors
+//   cursor-pointer
+//   disabled:cursor-not-allowed
+// `;
+// const thumbClasses = `
+//   block w-5 h-5
+//   bg-white rounded-full
+//   shadow
+//   transition-transform
+//   translate-x-0
+//   data-[state=checked]:translate-x-6
+// `;
 
 export const Switch: React.FC<SwitchProps> = ({
   checked,
   onCheckedChange,
   disabled = false,
   className,
+  ...fieldProps
 }) => {
   return (
     <SwitchPrimitive.Root
       checked={checked}
       onCheckedChange={onCheckedChange}
       disabled={disabled}
-      className={twMerge(rootClasses, className)}
+      className={twMerge("switch-root", className)}
+      {...fieldProps}
     >
-      <SwitchPrimitive.Thumb className={thumbClasses} />
+      <SwitchPrimitive.Thumb className="switch-thumb" />
     </SwitchPrimitive.Root>
   );
 };
